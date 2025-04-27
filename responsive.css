@@ -1,0 +1,201 @@
+
+@media (max-width: 1024px) {
+    .hero {
+        height: auto;
+        padding: 4rem 1rem;
+    }
+    
+    .destinos-populares {
+        gap: 1.5rem;
+    }
+    
+    .clase-card {
+        width: 45%;
+        min-width: 280px;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .logo-container {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .nav-menu a {
+        justify-content: center;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .destino {
+        padding: 1rem;
+        min-width: 120px;
+    }
+    
+    .registro-container, 
+    .vuelos-section, 
+    .horario-section {
+        padding: 2rem 1rem;
+    }
+    
+    .clases-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .clase-card {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .horario-table {
+        font-size: 0.9rem;
+    }
+    
+    .horario-table th, 
+    .horario-table td {
+        padding: 0.8rem 0.5rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+    
+    .destinos-populares {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .destino {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+    
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .registro-form {
+        padding: 1rem;
+    }
+    
+    .form-group input {
+        padding: 0.6rem;
+    }
+    
+    .registro-button {
+        padding: 0.8rem;
+    }
+    
+    .horario-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    #pais-select {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .logo-container h1 {
+        font-size: 1.5rem;
+    }
+    
+    .nav-menu a {
+        font-size: 0.9rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+    
+    .destino {
+        width: 100%;
+    }
+    
+    .destino i {
+        font-size: 1.5rem;
+    }
+    
+    .clase-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .footer {
+        padding: 2rem 1rem;
+    }
+}
+
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .destinos-populares {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .destino {
+        width: 45%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .hero {
+        height: 60vh;
+    }
+    
+    .clases-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+}

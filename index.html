@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroVuelo - Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="favicon/x-icon" href="img/mini.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="img/logo.jpg" alt="AeroVuelo Logo" class="logo">
+            <h1>AeroVuelo</h1>
+        </div>
+        
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="horario.html"><i class="fas fa-clock"></i> Horario</a></li>
+                <li><a href="vuelos.html"><i class="fas fa-plane"></i> Vuelos</a></li>
+                <li><a href="registro.html"><i class="fas fa-user-plus"></i> Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Viaja a los destinos más populares</h2>
+            <div class="destinos-populares">
+                <div class="destino">
+                    <i class="fas fa-city"></i>
+                    <p>París, Francia</p>
+                </div>
+                <div class="destino">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <p>Cancún, México</p>
+                </div>
+                <div class="destino">
+                    <i class="fas fa-torii-gate"></i>
+                    <p>Tokio, Japón</p>
+                </div>
+                <div class="destino">
+                    <i class="fas fa-star"></i>
+                    <p>Nueva York, USA</p>
+                </div>
+            </div>
+            <button class="cta-button" onclick="location.href='vuelos.html'">Reserva ahora</button>
+        </div>
+    </section>
+
+    <section class="vuelos-section">
+        <h2>Selecciona tu clase de vuelo</h2>
+        <div class="clases-container">
+            <div class="clase-card">
+                <i class="fas fa-users"></i>
+                <h3>Familiar</h3>
+                <p>15% de descuento para familias</p>
+                <ul>
+                    <li>Asientos amplios</li>
+                    <li>Menú infantil</li>
+                    <li>Entretenimiento para niños</li>
+                </ul>
+                <button class="reservar-button" onclick="location.href='vuelos.html'">Reservar</button>
+            </div>
+            <div class="clase-card">
+                <i class="fas fa-crown"></i>
+                <h3>VIP</h3>
+                <p>Experiencia premium</p>
+                <ul>
+                    <li>Asientos reclinables</li>
+                    <li>Comida gourmet</li>
+                    <li>Acceso a salas VIP</li>
+                </ul>
+                <button class="reservar-button" onclick="location.href='vuelos.html'">Reservar</button>
+            </div>
+            <div class="clase-card">
+                <i class="fas fa-chair"></i>
+                <h3>Clase Estándar</h3>
+                <p>Viaja cómodamente</p>
+                <ul>
+                    <li>Precios económicos</li>
+                    <li>Servicio básico</li>
+                    <li>Elección de asiento</li>
+                </ul>
+                <button class="reservar-button" onclick="location.href='vuelos.html'">Reservar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> info@aerovuelo.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociales</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico">
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 AeroVuelo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

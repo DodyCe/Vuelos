@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroVuelo - Horarios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="favicon/x-icon" href="img/mini.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="img/logo.jpg" alt="AeroVuelo Logo" class="logo">
+            <h1>AeroVuelo</h1>
+        </div>
+        
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="horario.html"><i class="fas fa-clock"></i> Horario</a></li>
+                <li><a href="vuelos.html"><i class="fas fa-plane"></i> Vuelos</a></li>
+                <li><a href="registro.html"><i class="fas fa-user-plus"></i> Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="horario-section">
+        <h2>Horarios de vuelos por país</h2>
+        <div class="filtros">
+            <select id="pais-select">
+                <option value="">Selecciona un país</option>
+                <option value="mexico">México</option>
+                <option value="usa">Estados Unidos</option>
+                <option value="francia">Francia</option>
+                <option value="japon">Japón</option>
+            </select>
+        </div>
+        <table class="horario-table">
+            <thead>
+                <tr>
+                    <th>Vuelo</th>
+                    <th>Destino</th>
+                    <th>Salida</th>
+                    <th>Llegada</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-horarios">
+                <tr><td colspan="5">Selecciona un país para ver los horarios</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> info@aerovuelo.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociales</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico">
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 AeroVuelo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

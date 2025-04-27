@@ -1,0 +1,482 @@
+
+:root {
+    --azul-pastel: #a7c7e7;
+    --verde-pastel: #c1e1c1;
+    --beige: #f5f5dc;
+    --rosa-pastel: #ffd1dc;
+    --gris-claro: #f8f9fa;
+    --gris-texto: #555;
+    --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transicion: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: var(--gris-texto);
+    background-color: var(--beige);
+}
+
+
+.header {
+    background-color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--sombra);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--gris-texto);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transicion);
+}
+
+.nav-menu a:hover {
+    color: var(--azul-pastel);
+}
+
+.nav-menu i {
+    font-size: 1.2rem;
+}
+
+
+.hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+                url('../img/clouds-bg.jpg') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    color: #333;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.destinos-populares {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.destino {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+    border-radius: 10px;
+    min-width: 150px;
+    box-shadow: var(--sombra);
+    transition: var(--transicion);
+}
+
+.destino:hover {
+    transform: translateY(-5px);
+    background-color: white;
+}
+
+.destino i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--azul-pastel);
+}
+
+.cta-button {
+    background-color: var(--azul-pastel);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: var(--transicion);
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    background-color: #8ab6d6;
+    transform: scale(1.05);
+}
+
+
+.registro-section {
+    padding: 4rem 2rem;
+    background-color: var(--rosa-pastel);
+}
+
+.registro-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    text-align: center;
+}
+
+.registro-container h2 {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.registro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--azul-pastel);
+}
+
+.registro-button {
+    background-color: var(--verde-pastel);
+    color: #333;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transicion);
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.registro-button:hover {
+    background-color: #a8d8a8;
+}
+
+
+.vuelos-section {
+    padding: 4rem 2rem;
+    background-color: var(--gris-claro);
+}
+
+.vuelos-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.clases-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.clase-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    width: 300px;
+    text-align: center;
+    transition: var(--transicion);
+}
+
+.clase-card:hover {
+    transform: translateY(-10px);
+}
+
+.clase-card i {
+    font-size: 2.5rem;
+    color: var(--azul-pastel);
+    margin-bottom: 1rem;
+}
+
+.clase-card h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.clase-card p {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--azul-pastel);
+}
+
+.clase-card ul {
+    list-style: none;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.clase-card li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.clase-card li:before {
+    content: "✓";
+    color: var(--verde-pastel);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.reservar-button {
+    background-color: var(--azul-pastel);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transicion);
+    width: 100%;
+    font-weight: 600;
+}
+
+.reservar-button:hover {
+    background-color: #8ab6d6;
+}
+
+
+.horario-section {
+    padding: 4rem 2rem;
+    background-color: white;
+}
+
+.horario-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#pais-select {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    min-width: 250px;
+}
+
+.horario-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+.horario-table th, .horario-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.horario-table th {
+    background-color: var(--azul-pastel);
+    color: white;
+    font-weight: 600;
+}
+
+.horario-table tr:hover {
+    background-color: var(--gris-claro);
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 3rem 2rem 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.footer-section p {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: var(--transicion);
+}
+
+.social-icons a:hover {
+    color: var(--azul-pastel);
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.newsletter-form input {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter-form button {
+    background-color: var(--azul-pastel);
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+.newsletter-form button:hover {
+    background-color: #8ab6d6;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #555;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .nav-menu ul {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .destinos-populares {
+        gap: 1rem;
+    }
+    
+    .clases-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+.status-delayed {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.status-cancelled {
+    color: #e74c3c;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+
+.hero {
+    min-height: 500px;
+}
